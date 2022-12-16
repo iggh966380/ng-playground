@@ -4,17 +4,12 @@ import { AppRoutingModule } from './app-routing.module';
 import { DirectivesModule } from './directives/directives.module';
 
 import { AppComponent } from './app.component';
+import { DIModule } from './DI/di.module';
 
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    DirectivesModule
-  ],
+  declarations: [AppComponent],
+  imports: [BrowserModule, AppRoutingModule, DirectivesModule, DIModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
