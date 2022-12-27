@@ -1,3 +1,4 @@
+import { ComponentsComponent } from './components/components.component';
 import { HeroComponent } from './DI/service/hero.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
@@ -12,6 +13,10 @@ const routes: Routes = [
     path: 'di',
     component: HeroComponent,
   },
+  {
+    path: 'components',
+    component: ComponentsComponent
+  }
 ];
 
 @NgModule({
